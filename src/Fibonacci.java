@@ -1,9 +1,17 @@
 
 public class Fibonacci {
 	public static void main(String[] args) {
-		//System.out.println("0,1,1,2,3,5,8,13,21,34,55,89");
-		int fibo;
-		int fib;
-
+		int prev = 0;
+		int curr = 1;
+		int next;
+		
+		for (int i = 0; i < 12; i++) {
+		next = prev+curr;	
+		prev = curr;
+		curr = next;
+		
+		System.out.println(next);
+		
+		}
 	}
 }
